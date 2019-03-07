@@ -3,4 +3,8 @@ Rails.application.routes.draw do
   get 'home/index'
 
   post 'geocode', to: 'home#geocode'
+
+  namespace :api, defaults: { format: :json } do
+    get 'geocode', to: 'home#geocode'
+  end
 end

@@ -1,2 +1,7 @@
-<p>This is a coordinate!</p>
-<p><%= @coordinates[:latitude] %></p>
+<% if @coordinates.empty? %>
+<% else %>
+  <p class="coordinate">Latitude</p>
+  <p class="coordinate_value"><%= @coordinates[:latitude] %></p>
+  <p class="coordinate">Longitude</p>
+  <p class="coordinate_value"><%= @coordinates[:longitude] %></p>
+<% end %>

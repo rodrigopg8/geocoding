@@ -1,8 +1,10 @@
-<h1>Geocoding</h1>
-<%= form_tag("/geocode", method: "post", remote: true) do %>
-  <p>Enter an address to get its geocode</p>
-  <%= text_field_tag 'address' %>
-  <%= submit_tag 'Geocode', id: 'geocode-btn' %>
-<% end %>
+<div class="container">
+  <h1>Geocoding</h1>
+  <%= form_tag("/geocode", method: "post", remote: true) do %>
+    <p>Enter an address to get its geocode</p>
+    <%= text_field_tag 'address' %>
+    <%= submit_tag 'Geocode', id: 'geocode-btn' %>
+  <% end %>
 
-<div id="coordinates"></div>
+  <div id="coordinates"></div>
+</div>
