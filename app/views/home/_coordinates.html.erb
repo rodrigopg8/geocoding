@@ -1,4 +1,5 @@
 <% if @coordinates.empty? %>
+  <p>Please enter a valid query.</p>
 <% else %>
   <p class="coordinate">Latitude</p>
   <p class="coordinate_value"><%= @coordinates[:latitude] %></p>
